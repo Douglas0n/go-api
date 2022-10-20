@@ -1,0 +1,35 @@
+info:
+  contact: {}
+paths:
+  /:
+    get:
+      consumes:
+      - '*/*'
+      description: get all albuns.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Return all albuns.
+      tags:
+      - albuns
+    post:
+      consumes:
+      - '*/*'
+      description: get an albuns by given an ID.
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Return an albuns by given an ID.
+      tags:
+      - albuns
+swagger: "2.0"
